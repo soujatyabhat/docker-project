@@ -1,7 +1,7 @@
 import pytest
 from app import app, password_gen, alpha, non_alpha
 
-# ---------- UNIT TESTS FOR password_gen FUNCTION ----------
+# ---------- UNIT TESTING ----------
 
 def test_password_gen_lengths():
     result = password_gen(3, 4, 100)
@@ -15,7 +15,7 @@ def test_password_gen_ranges():
     digits = [c for c in result if c.isdigit()]
     assert int(''.join(digits)) < 10
 
-# ---------- INTEGRATION TESTS FOR FLASK ROUTES ----------
+# ---------- INTEGRATION TESTING FOR FLASK ROUTES ----------
 
 @pytest.fixture
 def client():
