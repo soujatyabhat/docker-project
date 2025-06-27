@@ -7,7 +7,7 @@ alpha = [d for d in "abcdefghijklmnopqrstuvwxyz"]
 non_alpha = [d for d in "!#$%&'()*+,-./:;<=>?@[\]^_`{|}~"]
 
 #Random Password Generator
-de password_gen(char_range,nonChar_range,digit_range):
+def password_gen(char_range,nonChar_range,digit_range):
     password = ''
     
     for i in range(0,char_range):
