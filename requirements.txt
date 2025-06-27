@@ -1,4 +1,2 @@
 flask==2.3.3
-pytest==8.2.1
-requests==2.31.0
-pylint==3.1.0
+unittest-xml-reporting==3.2.0
